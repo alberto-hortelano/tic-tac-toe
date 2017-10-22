@@ -1,0 +1,14 @@
+element { '$$typeof': Symbol(react.element),
+  type: [Function: Html],
+  key: null,
+  ref: null,
+  props: { title: 'Universal React', number: 4 },
+  _owner: null,
+  _store: {} }
+element { '$$typeof': Symbol(react.element),
+  type: [Function: Html],
+  key: null,
+  ref: null,
+  props: { title: 'Universal React', number: 4 },
+  _owner: null,
+  _store: {} }
