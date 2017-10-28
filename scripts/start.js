@@ -29,11 +29,17 @@ const compiler = webpack(webpackConfig);
 const server = createServer(app);
 const socket = io(server);
 
+let lastHash = '';
 compiler.watch({
+	aggregateTimeout: 1000,
 	ignored: 'node_modules',
+	poll: 3000,
 }, (err, stats) => {
-	console.log('webpack watch', err, stats.errors);
-	socket.emit('webpackWatch',{msg:'abc'});
+	if (lastHash !== stats.hash) {
+		console.log('webpack watch', err);
+		lastHash = stats.hash;
+		socket.emit('webpackWatch',err);
+	}
 });
 
 socket.on('connection', (/*skt*/) => {

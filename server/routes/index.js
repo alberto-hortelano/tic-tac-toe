@@ -3,6 +3,7 @@ import express from 'express';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { Provider } from 'react-redux';
+import PropTypes from 'prop-types';
 
 //import Game from '../components/Game.js';
 const Game =  require('../components/Game.js');
@@ -19,13 +20,17 @@ const render = (component, data) => {
 }
 const Html = ({title, number}) => {
 	console.log('Html',title, number);
-  return (
-	  <Provider store={store}>
-	  	<Game />
-	  </Provider>
-  );
+	return (
+		<Provider store={store}>
+			<Game />
+		</Provider>
+	);
 };
 
+Html.propTypes = {
+  title: PropTypes.string.isRequired,
+  number: PropTypes.number.isRequired
+}
 router.get('*', (request, response) => {
 
 	response.send(render(Html, {
