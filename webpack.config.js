@@ -1,7 +1,22 @@
+console.log('webpack config');
 const path = require('path');
 module.exports = {
 	devtool: "source-map",
 	target: 'web',
+	resolve: {
+		modules: [
+			path.resolve(__dirname),
+			'node_modules'
+		],
+		alias: {
+			'actions': './common/actions',
+			'alias': './common/components',
+			'containers': './common/containers',
+			'reducers': './common/reducers',
+			'routes': './common/routes',
+			'store': './common/store.js',
+		},
+	},
 	entry: [
 		require.resolve('./public/io.js'), // Socket client to get server events
 		require.resolve('./client/index.js'),

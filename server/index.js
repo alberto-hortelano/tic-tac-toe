@@ -7,9 +7,9 @@ import { StaticRouter } from 'react-router';
 import { Provider } from 'react-redux';
 import { Helmet } from "react-helmet";
 
-import html from './components/Html.js';
-import Game from './components/Game.js';
-import store from './store';
+import html from 'components/Html.js';
+import Game from 'components/Game.js';
+import store from 'store';
 //import registerServiceWorker from './registerServiceWorker';
 
 const app = express();

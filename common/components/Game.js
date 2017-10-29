@@ -2,8 +2,8 @@ import React from 'react';
 import { Switch, Route } from 'react-router';
 import { Helmet } from "react-helmet";
 
-import SquareCT from '../containers/SquareCT.js';
-import NotFound from '../components/NotFound.js';
+import SquareCT from 'containers/SquareCT.js';
+import NotFound from 'components/NotFound.js';
 
 class Game extends React.Component {
 	render() {

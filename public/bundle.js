@@ -11220,15 +11220,15 @@ var _reactRouterDom = __webpack_require__(/*! react-router-dom */ 116);
 
 var _reactRedux = __webpack_require__(/*! react-redux */ 64);
 
-var _Game = __webpack_require__(/*! ../server/components/Game.js */ 159);
+var _Game = __webpack_require__(/*! ../common/components/Game.js */ 159);
 
 var _Game2 = _interopRequireDefault(_Game);
 
-var _store = __webpack_require__(/*! ../server/store */ 171);
+var _store = __webpack_require__(/*! ../common/store */ 171);
 
 var _store2 = _interopRequireDefault(_store);
 
-var _registerServiceWorker = __webpack_require__(/*! ./registerServiceWorker */ 174);
+var _registerServiceWorker = __webpack_require__(/*! ./registerServiceWorker.js */ 174);
 
 var _registerServiceWorker2 = _interopRequireDefault(_registerServiceWorker);
 
@@ -35265,7 +35265,7 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 /***/ }),
 /* 159 */
 /*!***********************************!*\
-  !*** ./server/components/Game.js ***!
+  !*** ./common/components/Game.js ***!
   \***********************************/
 /*! no static exports found */
 /*! all exports used */
@@ -35292,7 +35292,7 @@ var _SquareCT = __webpack_require__(/*! ../containers/SquareCT.js */ 168);
 
 var _SquareCT2 = _interopRequireDefault(_SquareCT);
 
-var _NotFound = __webpack_require__(/*! ../components/NotFound.js */ 170);
+var _NotFound = __webpack_require__(/*! ./NotFound.js */ 170);
 
 var _NotFound2 = _interopRequireDefault(_NotFound);
 
@@ -36346,7 +36346,7 @@ exports.warn = warn;
 /***/ }),
 /* 168 */
 /*!***************************************!*\
-  !*** ./server/containers/SquareCT.js ***!
+  !*** ./common/containers/SquareCT.js ***!
   \***************************************/
 /*! no static exports found */
 /*! all exports used */
@@ -36389,7 +36389,7 @@ exports.default = SquareCT;
 /***/ }),
 /* 169 */
 /*!*************************************!*\
-  !*** ./server/components/Square.js ***!
+  !*** ./common/components/Square.js ***!
   \*************************************/
 /*! no static exports found */
 /*! all exports used */
@@ -36446,7 +36446,7 @@ exports.default = Square;
 /***/ }),
 /* 170 */
 /*!***************************************!*\
-  !*** ./server/components/NotFound.js ***!
+  !*** ./common/components/NotFound.js ***!
   \***************************************/
 /*! no static exports found */
 /*! all exports used */
@@ -36513,7 +36513,7 @@ exports.default = NotFound;
 /***/ }),
 /* 171 */
 /*!*************************!*\
-  !*** ./server/store.js ***!
+  !*** ./common/store.js ***!
   \*************************/
 /*! no static exports found */
 /*! all exports used */
@@ -36540,7 +36540,7 @@ exports.default = store;
 /***/ }),
 /* 172 */
 /*!**********************************!*\
-  !*** ./server/reducers/index.js ***!
+  !*** ./common/reducers/index.js ***!
   \**********************************/
 /*! no static exports found */
 /*! all exports used */
@@ -36565,7 +36565,7 @@ exports.click = _click2.default;
 /***/ }),
 /* 173 */
 /*!**********************************!*\
-  !*** ./server/reducers/click.js ***!
+  !*** ./common/reducers/click.js ***!
   \**********************************/
 /*! no static exports found */
 /*! all exports used */

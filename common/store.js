@@ -1,5 +1,6 @@
 
 import { createStore, combineReducers } from 'redux';
+
 import { click } from './reducers';
 
 const store = createStore(

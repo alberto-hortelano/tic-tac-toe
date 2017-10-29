@@ -5,9 +5,9 @@ import { hydrate } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
-import Game from '../server/components/Game.js';
-import store from '../server/store';
-import registerServiceWorker from './registerServiceWorker';
+import Game from 'components/Game.js';
+import store from 'store';
+import registerServiceWorker from './registerServiceWorker.js';
 console.log('ddddddd');
 hydrate(
 	<BrowserRouter>

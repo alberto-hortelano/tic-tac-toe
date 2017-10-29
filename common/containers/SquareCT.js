@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
-import Square from '../components/Square.js';
+
+import Square from 'components/Square.js';
 
 const mapStateToProps = (state/*, ownProps*/) => {
   return {
