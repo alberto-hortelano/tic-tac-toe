@@ -9,6 +9,8 @@ ol, ul {
 
 .game-board {
   width: 102px;
+  display: flex;
+  flex-direction: row;
 }
 
 .square {
@@ -35,8 +37,6 @@ ol, ul {
 }
 
 .game {
-  display: flex;
-  flex-direction: row;
 }
 
 .game-info {

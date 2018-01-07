@@ -14,6 +14,7 @@ module.exports = {
 			'containers': './common/containers',
 			'reducers': './common/reducers',
 			'routes': './common/routes',
+			'lib': './common/lib',
 			'store': './common/store.js',
 		},
 	},

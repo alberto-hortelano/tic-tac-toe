@@ -1,11 +1,11 @@
 
 import { createStore, combineReducers } from 'redux';
 
-import { click } from './reducers';
+import reducers from './reducers';
 
 const store = createStore(
-	combineReducers({ click })/*,
-	preloadedState,
+	combineReducers(reducers)/*,
+	initialState,
 	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()*/
 );
 

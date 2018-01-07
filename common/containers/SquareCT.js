@@ -2,17 +2,18 @@ import { connect } from 'react-redux';
 
 import Square from 'components/Square.js';
 
-const mapStateToProps = (state/*, ownProps*/) => {
+const mapStateToProps = (state, ownProps) => {
   return {
-    state: state
+    state: state,
   }
 }
 
-const mapDispatchToProps = (dispatch/*, ownProps*/) => {
+const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onClick: (e, ownProps) => {
-			console.log('ownProps',ownProps);
-      dispatch({ type: 'CLICK', value: ownProps})
+    onClick: (e, index, history) => {
+			console.log('onClick mapDispatchToProps index, history',index, history);
+      const state = dispatch({ type: 'CLICK', value: {index, history}});
+			console.log('onClick mapDispatchToProps state',state);
     }
   }
 }

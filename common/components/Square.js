@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Square = ({state, onClick}) => {
-	console.log('state.click.squares',state.click.squares);
+const Square = (input) => {
+	const {state, onClick, history} = input;
+	console.log('history',history);
 	return (
 		<div>
 		{
@@ -10,7 +11,7 @@ const Square = ({state, onClick}) => {
 			<button
 				key={index}
 				className="square"
-				onClick={(e) => onClick(e, index)}
+				onClick={(e) => onClick(e, index, history)}
 			>
 				{square}
 			</button>)

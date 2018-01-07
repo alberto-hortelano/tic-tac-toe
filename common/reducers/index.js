@@ -1,3 +1,4 @@
 import click from './click.js';
+import trainer from './trainer.js';
 
-export { click };
+export default { click, trainer };

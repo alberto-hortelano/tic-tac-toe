@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import PropTypes from 'prop-types';
 
 //import Game from '../components/Game.js';
-const Game =  require('../components/Game.js');
+const GameCT =  require('../containers/Game.js');
 //import store from '../store';
 const store =  require('../store');
 
@@ -22,7 +22,7 @@ const Html = ({title, number}) => {
 	console.log('Html',title, number);
 	return (
 		<Provider store={store}>
-			<Game />
+			<GameCT />
 		</Provider>
 	);
 };
